@@ -2,5 +2,7 @@
 /* CSS Document */
 
 
-html{
-background-url: http://api.thumbr.it/whitenoise-361x370.png?background=3f4e54ff&noise=626262&density=64&opacity=31 }
+.col{
+	padding: 0px 50px 0px 50px;
+}
+

@@ -4,17 +4,55 @@
 <meta charset="utf-8">
 <title>Untitled Document</title>
 
-<link href="assets/css/reset.css" type="text/css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link href="assets/css/style.css" type="text/css">
-<link href="assets/javascript/game.js" type="text/javascript">
+<!--see why stylesheet isn't linking-->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
+<style>
+#container3 {
+	padding-left: -90px;
+	margin: 0 -440px;
+}
+#container2 {
+	margin: 0 -205px 0 0;
+}
+</style>
 
-<body background="assets/images/looney_tunes.jpg">
+<body>
+<div class="row">
+  <div id="container2">
+    <div class="col-md-3"> <img src="assets/images/title.png"> </div>
+  </div>
+  <div id="container3">
+    <div class="col-md-3"> <img src="assets/images/looney_tunes.jpg" height="900px" width="600px"> </div>
+  </div>
+  <div class="col-md-4">
+	  <h1><font color="blue">P</font>ress <font color="blue">A</font>ny <font color="blue">K</font>ey to <font color="blue">G</font>et <font color="blue">S</font>tarted!</h1>
+    
+	  <h2><font color="orange">CURRENT WORD</font></h2>
+    <span class="glyphicon glyphicon-pencil"></span> 
+    <!--	 style="display: none"-->
+    <div id="lineContainer"></div>
+    
+    <h3>NUMBER OF GUESSES REMAINING</h3>
+     <p id="guessLeft"></p>
 
+    <h4>LETTERS ALREADY GUESSED</h4>
+    <p id="guessedLetters"></p>
 
-
-
-
+  <h5> WINS</h5>
+    <span class="glyphicon glyphicon-menu-left"></span>
+     <p id="wins"></p>
+    
+      <span class="glyphicon glyphicon-menu-right"></span> 
+</div>
+</div>
 
 </body>
 </html>
